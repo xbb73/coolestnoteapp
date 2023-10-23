@@ -1,7 +1,7 @@
 {
   "resourceName": "imagestore",
-  "policyUUID": "f04f2a66",
-  "bucketName": "coolestnotebucket",
+  "policyUUID": "05d9b3c6",
+  "bucketName": "bucketname1",
   "storageAccess": "auth",
   "guestAccess": [],
   "authAccess": [

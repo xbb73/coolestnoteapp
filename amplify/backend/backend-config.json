@@ -44,7 +44,7 @@
     }
   },
   "storage": {
-    "notestore": {
+    "imagestore": {
       "dependsOn": [],
       "providerPlugin": "awscloudformation",
       "service": "S3"

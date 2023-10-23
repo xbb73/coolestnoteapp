@@ -6,15 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import { Amplify } from 'aws-amplify';
 import { Storage } from "aws-amplify";
 import config from "./aws-exports";
-Storage.configure({
-    region: config.aws_user_files_s3_bucket_region,
-    bucket: config.aws_user_files_s3_bucket,
-    identityPoolId: config.aws_user_pools_id,
-    level: "protected",
-});
 
 Amplify.configure(config);
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

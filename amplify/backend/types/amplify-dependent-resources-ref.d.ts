@@ -18,7 +18,7 @@ export type AmplifyDependentResourcesAttributes = {
     }
   },
   "storage": {
-    "notestore": {
+    "imagestore": {
       "BucketName": "string",
       "Region": "string"
     }
