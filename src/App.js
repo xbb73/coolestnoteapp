@@ -26,7 +26,6 @@ const App = ({ signOut }) => {
   }, []);
 
   async function fetchNotes() {
-    Storage.configure({ region: "us-east-1" });
     const apiData = await API.graphql({ query: listNotes });
     const notesFromAPI = apiData.data.listNotes.items;
     await Promise.all(
@@ -42,7 +41,6 @@ const App = ({ signOut }) => {
   }
 
   async function createNote(event) {
-    Storage.configure({ region: "us-east-1" });
     event.preventDefault();
     const form = new FormData(event.target);
     const image = form.get("image");
@@ -62,7 +60,6 @@ const App = ({ signOut }) => {
   
 
   async function deleteNote({ id, name }) {
-    Storage.configure({ region: "us-east-1" });
     const newNotes = notes.filter((note) => note.id !== id);
     setNotes(newNotes);
     await Storage.remove(name);
