@@ -1,5 +1,5 @@
 {
-  "resourceName": "notestore",
+  "resourceName": "imagestore",
   "policyUUID": "f04f2a66",
   "bucketName": "coolestnotebucket",
   "storageAccess": "auth",
