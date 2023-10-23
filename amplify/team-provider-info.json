@@ -19,7 +19,7 @@
         "coolestnoteapp": {}
       },
       "storage": {
-        "imagestore": {}
+        "imagestorage": {}
       }
     }
   }

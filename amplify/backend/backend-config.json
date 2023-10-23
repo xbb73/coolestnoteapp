@@ -44,7 +44,7 @@
     }
   },
   "storage": {
-    "imagestore": {
+    "imagestorage": {
       "dependsOn": [],
       "providerPlugin": "awscloudformation",
       "service": "S3"
