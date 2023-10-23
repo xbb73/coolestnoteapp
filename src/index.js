@@ -4,7 +4,15 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Amplify } from 'aws-amplify';
-import config from './aws-exports';
+import { Storage } from "aws-amplify";
+import config from "./aws-exports";
+Storage.configure({
+    region: config.aws_user_files_s3_bucket_region,
+    bucket: config.aws_user_files_s3_bucket,
+    identityPoolId: config.aws_user_pools_id,
+    level: "protected",
+});
+
 Amplify.configure(config);
 
 
