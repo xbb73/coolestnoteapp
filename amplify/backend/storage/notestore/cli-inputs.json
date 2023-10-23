@@ -1,0 +1,12 @@
+{
+  "resourceName": "notestore",
+  "policyUUID": "f04f2a66",
+  "bucketName": "coolestnotebucket",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "READ"
+  ],
+  "triggerFunction": "NONE",
+  "groupAccess": {}
+}
